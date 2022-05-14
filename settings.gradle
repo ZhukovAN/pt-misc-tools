@@ -1,0 +1,14 @@
+// As for 20210916 Gradle plugin portal still redirects
+// https://plugins.gradle.org/m2/org/jenkins-ci/tools/gradle-jpi-plugin/0.43.0/gradle-jpi-plugin-0.43.0.module
+// to https://jcenter.bintray.com/org/jenkins-ci/tools/gradle-jpi-plugin/0.43.0/gradle-jpi-plugin-0.43.0.module
+// that isn't accessible now
+pluginManagement {
+    repositories {
+        gradlePluginPortal() // Include public Gradle plugin portal
+    }
+}
+
+rootProject.name = 'pt-misc-tools'
+
+include ':vijn-jenkins-plugin'
+include ':vijn-i18n'

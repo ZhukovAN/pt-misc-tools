@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+Plugin that allows to integrate Positive Technologies Vijn solution into build process
+</div>
